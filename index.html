@@ -1,0 +1,622 @@
+<html>
+<head>
+    <title>Code</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light fixed-top justify-content-sm-between" id="nav">
+            <div class="ml-lg-5">
+                <a class="navbar-brand" href="#">
+                    <img src="image/title.jpeg" style="width:120px; height: 100%; border-radius: 5px;">
+                </a>
+                <ul class="navbar-nav d-sm-inline d-none ">
+                    <li class="nav-item btn font-weight-bold">
+                        <a class="nav-link" href="#">html</a>
+                    </li>
+                    <li class="nav-item btn font-weight-bold">
+                        <a class="nav-link" href="#">css</a>
+                    </li>
+                    <li class="nav-item dropdown border-t btn Tgroup position-fixed font-weight-bold mt-2">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><span>A</span>nother</a>
+                        <div class="dropdown-menu color-body">
+                            <a class="dropdown-item" href="#">Java Script</a>
+                            <a class="dropdown-item" href="#">nodejs</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Another links</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="mr-lg-5">
+                <form class="form-inline">
+                    <input type="text" class="form-control form-control d-lg-inline d-none" placeholder="Search">
+                    <input type="text" class="form-control form-control-sm d-lg-none d-md-inline d-none"
+                        placeholder="Search">
+                    <button class="btn color-header text-light mr-2 ml-2 d-md-inline d-none">Search</button>
+                    <button class="btn btn-sm  color-header text-light  d-md-none mr-2 log" data-toggle="modal"
+                        data-target="#myModal">Login</button>
+                    <button class="btn color-header text-light  mr-2 d-md-inline d-none log" data-toggle="modal"
+                        data-target="#myModal">Login</button>
+                    <button class="navbar-toggler color-header">
+                        <span class="navbar-toggler-icon dropup" data-toggle="dropdown" style="font-size:14px;"></span>
+                        <div class="dropdown-menu dropdown-menu-right color-body">
+                            <a class="dropdown-item" href="#">css</a>
+                            <a class="dropdown-item" href="#">html</a>
+                            <a class="dropdown-item" href="#">JavaScript</a>
+                            <a class="dropdown-item" href="#">C++</a>
+                            <div class="dropdown-header">Search</div>
+                            <input type="text" class="form-control form-control-sm m-auto" style="width: 96%;"
+                                placeholder="Search">
+                        </div>
+                    </button>
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog" style="opacity: 1;">
+                            <div class="modal-content" style="border-radius: 12px;">
+                                <div class="modal-header btn-dark"
+                                    style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                                    <h4 class="modal-title">Login</h4>
+                                    <button class="btn  color-header text-light  mr-1 font-weight-bold" id="resive"
+                                        data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body m-4">
+                                    <form class="needs-validation" novalidate>
+                                        <div class="form-group">
+                                            <label for="uname" class="color-text font-weight-bold">Username or
+                                                Phone</label>
+                                            <input type="text" class="form-control w-100 m-2"
+                                                placeholder="Enter username" required>
+                                            <div class="valid-feedback">Valid.</div>
+                                            <div class="invalid-feedback">Please fill out this field.</div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="pwd" class="color-text font-weight-bold ">Password</label>
+                                            <input type="password" class="form-control w-100 m-2"
+                                                placeholder="Enter password" required>
+                                            <div class="valid-feedback">Valid.</div>
+                                            <div class="invalid-feedback">Please fill out this field.</div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" class="custom-control-input" id="switch1" >
+                                                <label
+                                                    class="custom-control-label align-top color-text font-weight-bold"
+                                                    for="switch1">Remember me</label>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <button type="submit" class="btn color-header text-light  mt-2">Submit</button>
+                                        <button type="button" class="btn color-header text-light float-right mt-2 "
+                                            data-dismiss="modal">Close</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </nav>
+        <div class=" div1 position-fixed">
+            <ul class="d-flex flex-column-reverse overflow-hidden ul1 ">
+                <li>
+                    <a class="contact color-header btn rounded-circle text-light"><i class="fas fa-info "></i></a>
+                </li>
+                <li class="mt-2 mb-2">
+                    <a class="contact color-header  btn rounded-circle text-light" target="_blank" data-toggle="tooltip"
+                        data-placement="left" title="facebook" href="https://www.facebook.com/login.php"><i
+                            class="fab fa-facebook-f "></i></a>
+                </li>
+                <li>
+                    <a class="contact color-header  btn rounded-circle text-light" target="_blank" data-toggle="tooltip"
+                        data-placement="left" title="whatsapp" href="https://www.whatsapp.com/"><i
+                            class="fab fa-whatsapp " style="font-size: 22px;"></i></a>
+                </li>
+                <li class="mt-2 mb-2">
+                    <a class="contact color-header  btn rounded-circle text-light" target="_blank" data-toggle="tooltip"
+                        data-placement="left" title="twitter" href="https://twitter.com/"><i
+                            class="fab fa-twitter "></i></a>
+                </li>
+                <li>
+                    <a class="contact color-header  btn rounded-circle text-light" target="_blank" data-toggle="tooltip"
+                        data-placement="left" title="linkedin"
+                        href="https://eg.linkedin.com/?utm_source=edge_ntp&utm_medium=top&utm_campaign=eg&original_referer="><i
+                            class="fab fa-linkedin-in"></i></a>
+                </li>
+                <li class="mb-2">
+                    <a class="contact color-header  btn rounded-circle text-light" target="_blank" data-toggle="tooltip"
+                        data-placement="left" title="instagram" href="https://www.instagram.com/accounts/login/"><i
+                            class="fab fa-instagram "></i></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <section class="home container m-auto p-0 ">
+        <div class="row ml-0 mr-0 div3">
+            <div id="demo" class="carousel slide col-12  p-0" data-ride="carousel">
+                <div class="carousel-indicators d-flex w-75 justify-content-center m-auto" style="gap: 10px;">
+                    <div data-target="#demo" data-slide-to="0">
+                        <img src="image/scroll-5.jpg" alt="" class="w-100 h-100">
+                    </div>
+                    <div data-target="#demo" data-slide-to="1" class="active">
+                        <img src="image/scroll-7.jpg" alt="" class="w-100 h-100">
+                    </div>
+                    <div data-target="#demo" data-slide-to="2">
+                        <img src="image/scroll-3.jpg" alt="" class="w-100 h-100">
+                    </div>
+                    <div data-target="#demo" data-slide-to="3">
+                        <img src="image/scroll-4.jpg" alt="" class="w-100 h-100">
+                    </div>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="image/scroll-5.jpg" class="w-100 h-100">
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="image/scroll-7.jpg " class="w-100 h-100">
+
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/scroll-3.jpg" class="w-100 h-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/scroll-4.jpg" class="w-100 h-100">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+            <div class="color-body p-3 pl-4 order-md-2 rounded-lg h-auto">
+                <h2 class="text-center text-md-left color-text">Welcome</h2>
+                <b>This is paragraph in template 2 showing a website using Bootstrap, Bootstrap is a free front-end
+                    framework for faster and easier web development.
+                    Bootstrap includes HTML and CSS based design templates for typography, forms, buttons, tables,
+                    navigation, modals, image carousels and many other, as well as optional JavaScript plugins.
+                    Bootstrap also gives you the ability to easily create responsive designs</b>
+            </div>
+        </div>
+    </section>
+    <!-- ///////////////////////////////////////////////////////////////////////////////////// -->
+    <div class="m-4"></div>
+    <section class="Crds Cr container p-0">
+        <ul class="nav nav-pills">
+            <li class="nav-item w-100 text-center">
+                <a class="nav-link active w-100 font-weight-bold rounded-pill " style=" height: 60px; font-size:25px"
+                    data-toggle="pill" href="#vv">informations</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" id="vv">
+                <div id="accordion">
+                    <div class="card c1">
+                        <div class="color-body position-relative form-check-label card-header rounded-pill float-right"
+                            data-toggle="collapse" href="#collapse1">
+                            <a class="collapsed card-link text-dark ">
+                                web development<span class="float-right font-weight-light"><i
+                                        class="fas fa-angle-down i-rotate pt-1"></i></span>
+                            </a>
+                        </div>
+                        <div id="collapse1" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                                Lorem ipsum..
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card c1">
+                        <div class="color-body position-relative form-check-label card-header rounded-pill float-right"
+                            data-toggle="collapse" href="#collapse2">
+                            <a class="collapsed card-link text-dark ">
+                                artificial intelligence <span class="float-right font-weight-light"><i
+                                        class="fas fa-angle-down i-rotate pt-1"></i></span>
+                            </a>
+                        </div>
+                        <div id="collapse2" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                                Lorem ipsum..
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card c1">
+                        <div class="color-body position-relative form-check-label card-header rounded-pill float-right"
+                            data-toggle="collapse" href="#collapse3">
+                            <a class="collapsed card-link text-dark ">
+                                flutter <span class="float-right font-weight-light"><i
+                                        class="fas fa-angle-down i-rotate pt-1"></i></span>
+                            </a>
+                        </div>
+                        <div id="collapse3" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                                Lorem ipsum..
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ////////////////////////////////////////////////////////////////////////////////// -->
+    <section class="container p-0 ">
+        <div class="cardt Cr mt-4 pb-4">
+            <ul class="nav nav-pills">
+                <li class="nav-item w-100 text-center">
+                    <a class="nav-link active w-100 font-weight-bold rounded-pill "
+                        style=" height: 60px; font-size:25px" data-toggle="pill" href="#vv2">Css</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active pl-4 pt-2 " id="vv2">
+                    <p>you can ask me for Css <span class="font-weight-bold">Press Send</span></p>
+                    <button class="btn toltp tol position-relative color-header " onclick="vihi(this)">
+                        <div class="toltptext text-center text-dark position-absolute" style="opacity: 0;">Sended</div>
+                        <div class="toltptext text-center text-dark position-absolute toltptext1">Send to me </div>
+                        Send
+                    </button>
+                    <div class="form-group">
+                        <textarea class="form-control mt-4" rows="5" placeholder="write your problem"
+                            style="width: 96%; resize: none;"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cardt Cr mt-4 pb-4">
+            <ul class="nav nav-pills">
+                <li class="nav-item w-100 text-center">
+                    <a class="nav-link active w-100 font-weight-bold rounded-pill "
+                        style=" height: 60px; font-size:25px" data-toggle="pill" href="#vv2">html</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active pl-4 pt-2 " id="vv2">
+                    <p>you can ask me for html <span class="font-weight-bold">Press Send</span></p>
+                    <button class="btn toltp position-relative color-header " onclick="vihi(this)">
+                        <div class="toltptext text-center text-dark position-absolute" style="opacity: 0;">Sended</div>
+                        <div class="toltptext text-center text-dark position-absolute toltptext1">Send to me
+                        </div>
+                        Send
+                    </button>
+                    <div class="form-group">
+                        <textarea class="form-control mt-4" rows="5" placeholder="write your problem"
+                            style="width: 96%; resize: none;"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cardt Cr mt-4 pb-4">
+            <ul class="nav nav-pills">
+                <li class="nav-item w-100 text-center">
+                    <a class="nav-link active w-100 font-weight-bold rounded-pill "
+                        style=" height: 60px; font-size:25px" data-toggle="pill" href="#vv2">JS</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active pl-4 pt-2 " id="vv2">
+                    <p>you can ask me for JS <span class="font-weight-bold">Press Send</span></p>
+                    <button class="btn toltp position-relative color-header " onclick="vihi(this)">
+                        <div class="toltptext text-center text-dark position-absolute " style="opacity: 0;">Sended</div>
+                        <div class="toltptext text-center text-dark position-absolute toltptext1">Send to me
+                        </div>
+                        Send
+                    </button>
+                    <div class="form-group">
+                        <textarea class="form-control mt-4" rows="5" placeholder="write your problem"
+                            style="width: 96%; resize: none;"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /////////////////////////////////////////////////////////////////////// -->
+    <section class="w-100 mt-4 mb-4" style="height: 40vh;">
+        <div class="img-fexd">
+        </div>
+    </section>
+    <!-- ////////////////////////////////////////////////////////////////////////////////// -->
+    <section class="category container ">
+        <div class="row">
+            <div class="col-6 col-md-4 p-3 p-lg-5">
+                <div class="category-item">
+                    <figure>
+                        <img class="w-100 h-75" src="image/scroll-3.jpg" alt="" />
+                    </figure>
+                    <div class="text-left p-2 text-center ">
+                        <p class="font-weight-bold p2">CSS tutorial</p>
+                        <button class="btn w-100 color-header">Get now</button>
+                    </div>
+                </div><!--category-item-->
+            </div>
+            <div class="col-6 col-md-4 p-3 p-lg-5">
+                <div class="category-item">
+                    <figure>
+                        <img class="w-100 h-75" src="image/scroll-4.jpg" alt="" />
+                    </figure>
+                    <div class="text-left p-2 ">
+                        <p class="font-weight-bold text-center">SQL tutorial</p>
+                        <button class="btn w-100 color-header">Get now</button>
+                    </div>
+                </div><!--category-item-->
+            </div>
+            <div class="col-6 col-md-4 p-3 p-lg-5">
+                <div class="category-item">
+                    <figure>
+                        <img class="w-100 h-75" src="image/scroll-5.jpg" alt="" />
+                    </figure>
+                    <div class="text-left p-2 ">
+                        <p class="font-weight-bold text-center">JS tutorial</p>
+                        <button class="btn w-100 color-header">Get now</button>
+                    </div>
+                </div><!--category-item-->
+            </div>
+            <div class="col-6 col-md-4 p-3 p-lg-5">
+                <div class="category-item">
+                    <figure>
+                        <img class="w-100 h-75" src="image/scroll-6.jpg" alt="" />
+                    </figure>
+                    <div class="text-left p-2 text-center ">
+                        <p class="font-weight-bold">jQuery tutorial</p>
+                        <button class="btn w-100 color-header">Get now</button>
+                    </div>
+                </div><!--category-item-->
+            </div>
+            <div class="col-6 col-md-4 p-3 p-lg-5">
+                <div class="category-item">
+                    <figure>
+                        <img class="w-100 h-75" src="image/scroll-10.jpg" alt="" />
+                    </figure>
+                    <div class="text-left p-2 ">
+                        <p class="font-weight-bold text-center">C++ tutorial</p>
+                        <button class="btn w-100 color-header">Get now</button>
+                    </div>
+                </div><!--category-item-->
+            </div>
+            <div class="col-6 col-md-4 p-3 p-lg-5">
+                <div class="category-item">
+                    <figure>
+                        <img class="w-100 h-75" src="image/scroll-8.jpg" alt="" />
+                    </figure>
+                    <div class="text-left p-2 ">
+                        <p class="font-weight-bold text-center">C# tutorial</p>
+                        <button class="btn w-100 color-header">Get now</button>
+                    </div>
+                </div><!--category-item-->
+            </div>
+            <div class="d-flex justify-content-around">
+                <div class="col-6 col-md-4 p-3 p-lg-5">
+                    <div class="category-item">
+                        <figure>
+                            <img class="w-100 h-75" src="image/scroll-11.jpg" alt="" />
+                        </figure>
+                        <div class="text-left p-2 text-center ">
+                            <p class="font-weight-bold">Bootstrap tutorial </p>
+                            <button class="btn w-100 color-header">Get now</button>
+                        </div>
+                    </div><!--category-item-->
+                </div>
+                <div class="col-6 col-md-4 p-3 p-lg-5">
+                    <div class="category-item">
+                        <figure>
+                            <img class="w-100 h-75" src="image/scroll-7.jpg" alt="" />
+                        </figure>
+                        <div class="text-left p-2 ">
+                            <p class="font-weight-bold text-center">Html tutorial</p>
+                            <button class="btn w-100 color-header">Get now</button>
+                        </div>
+                    </div><!--category-item-->
+                </div>
+            </div>
+    </section>
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////// -->
+    <section class="w-100 mt-4 mb-4" style="height: 40vh;">
+        <div class="img-fexd1"></div>
+    </section>
+    <!-- ///////////////////////////////////////////////////////////////////////////////////// -->
+    <section>
+        <div class="thanks">
+            <div class="container">
+                <div class="btn w-100 rounded-pill p-3 text-light mt-2 mb-2"
+                    style="font-size: 30px; font-weight:bold ; background-color: #ce9784;">
+                    thanks for me </div>
+                <div class="row">
+                    <div class="col-6 col-md-4 p-3 p-lg-3">
+                        <div class="thanks-item">
+                            <img class="w-100 h-100" src="image/p4.jpg" alt="" />
+                            <div class="position-absolute w-100 h-100" style="top: 0%; left: 0%;">
+                                <div class="text-left pr-3 pl-4 p-2">
+                                    <p class="mt-3 text-center text-light" style="font-size: 26px;font-weight: bold;">
+                                        Bavly Ekramy</p>
+                                    <figure class="h-75">
+                                        <img src="image/p4.jpg" class="w-50 h-50"
+                                            style="border-radius: 50% ; margin-top: 50%;">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div><!--thanks-item-->
+                    </div>
+                    <div class="col-6 col-md-4 p-3 p-lg-3">
+                        <div class="thanks-item">
+                            <img class="w-100" src="image/p3.jpg" alt="" />
+                            <div class="position-absolute w-100 h-100" style="top: 0%; left: 0%;">
+                                <div class="text-left pr-3 pl-4 p-2">
+                                    <p class="mt-3 text-center text-light " style="font-size: 26px; font-weight: bold;">
+                                        Bavly Ekramy</p>
+                                    <figure class="h-75">
+                                        <img src="image/p3.jpg" class="w-50 h-50"
+                                            style="border-radius: 50% ; margin-top: 50%;">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div><!--thanks-item-->
+                    </div>
+                    <div class="col-6 col-md-4 p-3 p-lg-3 m-auto">
+                        <div class="thanks-item">
+                            <img class="w-100" src="image/p4.jpg" alt="" />
+                            <div class="position-absolute w-100 h-100" style="top: 0%; left: 0%;font-weight: bold;">
+                                <div class="text-left pr-3 pl-4 p-2">
+                                    <p class="mt-3 text-center text-light" style="font-size: 26px;">Bavly Ekramy</p>
+                                    <figure class="h-75">
+                                        <img src="image/p4.jpg" class="w-50 h-50"
+                                            style="border-radius: 50% ; margin-top: 50%;">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div><!--thanks-item-->
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- //////////////////////////////////////////////////////////////////////// -->
+    <section class="potcast container p-0">
+        <div class="btn w-100 rounded-pill p-3 text-light"
+            style="font-size: 30px; font-weight:bold ; background-color: #ce9784;">
+            hallo </div>
+        <div class="potcast-item w-100 mt-5 mb-5 overflow-hidden" style="height: 40vh;">
+            <figure class="overflow-hidden float-right h-100" style="width:30%;  ">
+                <img class="w-100 h-100" src="image/scroll-7.jpg" alt="Card image" style="transition: 1s;">
+            </figure>
+            <div class="card-body p-2 p-md-4">
+                <h4 class="card-title mb-2">John Doe</h4>
+                <div class="potcast-line position-relative d-inline" style="font-size: 10px;">
+                    <i class="fas fa-calendar-alt"></i> mon, may 25th 2020
+                </div>
+                <p class="card-text mt-2 mb-5" style="width: 68%;">Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Delectus quisquam veniam accusamus ipsa corrupti numquam aspernatur ipsam
+                    cumque repudiandae. Odit, ratione blanditiis. Ullam molestias dolores hic, illo dolor vitae
+                    excepturi.</p>
+                <ul>
+                    <li class="rounded-lg pl-1"><a class="btn ">See Profile</a></li>
+                    <li class="rounded-lg pl-1"><a class="btn ">See Profile</a></li>
+                    <li class="rounded-lg pl-1 color"><a class="btn ">See Profile</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="potcast-item w-100 mt-5 mb-5 overflow-hidden" style="height: 40vh;">
+            <figure class="overflow-hidden float-left1 h-100" style="width: 30%; margin-right: 3%;">
+                <img class="w-100 h-100" src="image/scroll-7.jpg" alt="Card image" style="transition: 1s;">
+            </figure>
+            <div class="card-body mt-2 p-md-4 p-2">
+                <h4 class="card-title mb-2">John Doe</h4>
+                <div class="potcast-line position-relative d-inline" style="font-size: 10px;">
+                    <i class="fas fa-calendar-alt"></i> mon, may 25th 2020
+                </div>
+                <p class="card-text mt-2 mb-5" style="width: 68%;">Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Delectus quisquam veniam accusamus ipsa corrupti numquam aspernatur ipsam
+                    cumque repudiandae. Odit, ratione blanditiis. Ullam molestias dolores hic, illo dolor vitae
+                    excepturi.</p>
+                <ul>
+                    <li class="rounded-lg pl-1"><a class="btn ">See Profile</a></li>
+                    <li class="rounded-lg pl-1"><a class="btn ">See Profile</a></li>
+                    <li class="rounded-lg pl-1 color"><a class="btn ">See Profile</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="potcast-item w-100 mt-5 mb-5 overflow-hidden" style="height: 40vh;">
+            <figure class="overflow-hidden float-right h-100" style="width:30%;  ">
+                <img class="w-100 h-100" src="image/scroll-7.jpg" alt="Card image" style="transition: 1s;">
+            </figure>
+            <div class="card-body p-2 p-md-4">
+                <h4 class="card-title mb-2">John Doe</h4>
+                <div class="potcast-line position-relative d-inline" style="font-size: 10px;">
+                    <i class="fas fa-calendar-alt"></i> mon, may 25th 2020
+                </div>
+                <p class="card-text mt-2 mb-5" style="width: 68%;">Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Delectus quisquam veniam accusamus ipsa corrupti numquam aspernatur ipsam
+                    cumque repudiandae. Odit, ratione blanditiis. Ullam molestias dolores hic, illo dolor vitae
+                    excepturi.</p>
+                <ul>
+                    <li class="rounded-lg pl-1"><a class="btn ">See Profile</a></li>
+                    <li class="rounded-lg pl-1"><a class="btn ">See Profile</a></li>
+                    <li class="rounded-lg pl-1 color"><a class="btn ">See Profile</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="potcast-item w-100 mt-5 mb-5 overflow-hidden" style="height: 40vh;">
+            <figure class="overflow-hidden float-left1 h-100" style="width: 30%; margin-right: 3%;">
+                <img class="w-100 h-100" src="image/scroll-7.jpg" alt="Card image" style="transition: 1s;">
+            </figure>
+            <div class="card-body mt-2 p-2 p-md-4">
+                <h4 class="card-title mb-2">John Doe</h4>
+                <div class="potcast-line position-relative d-inline" style="font-size: 10px;">
+                    <i class="fas fa-calendar-alt"></i> mon, may 25th 2020
+                </div>
+                <p class="card-text mt-2 mb-5" style="width: 68%;">Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Delectus quisquam veniam accusamus ipsa corrupti numquam aspernatur ipsam
+                    cumque repudiandae. Odit, ratione blanditiis. Ullam molestias dolores hic, illo dolor vitae
+                    excepturi.</p>
+                <ul>
+                    <li class="rounded-lg pl-1"><a class="btn ">See Profile</a></li>
+                    <li class="rounded-lg pl-1"><a class="btn ">See Profile</a></li>
+                    <li class="rounded-lg pl-1 color"><a class="btn ">See Profile</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- /////////////////////////////////////////////////////////// -->
+    <footer class="w-100 p-4 h-auto color-header">
+        <div class="d-flex justify-content-around b-flex ">
+            <div class="div1">
+                <h4>Hobbies & Skills</h4>
+                <ul>
+                    <li>Html</li>
+                    <li>Css</li>
+                    <li>Java Script</li>
+                    <li>Problem solving with java , c++ and Java Script</li>
+                    <li>Data Science</li>
+                    <li>Math <i class="fas fa-heart li-i"></i></li>
+                </ul>
+            </div>
+            <div class="div2">
+                <h4>Contact with me</h4>
+                <ul>
+                    <li><i class="fab fa-facebook-f"></i><a href="https://www.facebook.com/bavleakramy?mibextid=ZbWKwL"
+                            target="_blank"> facebook acount</a></li>
+                    <li><i class="fab fa-linkedin-in"></i><a
+                            href="https://www.linkedin.com/in/bavly-akramy-201751256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                            target="_blank"> linked in acount</a></li>
+                    <li><i class="fab fa-github"></i><a href="https://github.com/BavlyEkramy" target="_blank">
+                            github</a>
+                    </li>
+                    <li><i class="far fa-envelope"></i><a href="mailto:bavleakramy@gmail.com" target="_blank">
+                            bavleakramy@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="div3">
+                <h4>Resources (best channels)</h4>
+                <ul>
+                    <li>Sef future</li>
+                    <li>TreeHouse</li>
+                    <li>DevTips</li>
+                    <li>css-Tricks</li>
+                    <li>El zero</li>
+                    <li>Kudvenkat</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script>
+        function vihi(item) {
+            var tooltip = item.querySelector(".toltptext1");
+            var tip = item.querySelector(".toltptext");
+            tooltip.style.opacity = 0;
+            tip.style.opacity = 1;
+            al()
+        }
+        function al() {
+            alert("Your messase is Sended")
+        }
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</body>
+
+</html>
